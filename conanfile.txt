@@ -1,0 +1,8 @@
+[requires]
+ConanCargoWrapper/0.1@lasote/testing
+OpenSSL/1.0.2j@lasote/stable
+
+[generators]
+ConanCargoWrapper
+
+

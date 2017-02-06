@@ -1,0 +1,13 @@
+[package]
+name = "repro-fingerprint-openssl"
+version = "0.1.0"
+authors = ["Nathanael Jones <nathanael.jones@gmail.com>"]
+build = "conan_cargo_build.rs"
+
+[dependencies]
+hyper = "*"
+hyper-native-tls = "*"
+
+[target.'cfg(not(any(target_os = "windows", target_os = "macos")))'.dependencies]
+openssl = "*"
+hyper-openssl = "*"
